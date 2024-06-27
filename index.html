@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">       
+</head>
+<body>
+    <div class="container">
+        <h1>Summary</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Original Text</h5>
+                <p class="card-text">{{ original_txt }}</p>
+                <h5 class="card-title">Summary</h5>
+                <p class="card-text">{{ summary }}</p>
+                <h5 class="card-title">Statistics</h5>
+                <p class="card-text">Original Text Length: {{ len_orig_txt }} words</p>
+                <p class="card-text">Summary Length: {{ len_summary }} words</p>
+                <p class="card-text">ROUGE Score: {{ rouge_score }}</p>
+            </div>
+        </div>
+        <a href="/" class="btn btn-primary mt-3">Go Back</a>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MULTI LINGUAL TEXT SUMMARIZATION USING NLP</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/styles.css">       
@@ -48,7 +81,7 @@
 </html>
 
 
-
+ -->
 
 
 
